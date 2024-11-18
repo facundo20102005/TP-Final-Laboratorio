@@ -5,7 +5,7 @@
 const char* ssid = "";  //Wifi
 const char* password = ""; // Contraseña del Wifi
 String phoneNumber = ""; //Numero del Celular
-String apiKey = "8454542";
+String apiKey = ""; // Codigo que te da el bot
 
 const int buttonPin = 14;  // Pin al que está conectado el botón
 
