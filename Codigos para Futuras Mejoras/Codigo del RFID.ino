@@ -14,8 +14,8 @@ MFRC522 mfrc522(SS_PIN, RST_PIN);  // Instanciamos el objeto MFRC522
 
 #define ON_Board_LED 2  // LED integrado en la placa (GPIO2)
 
-const char* ssid = "paola vilca 2.4Ghz";
-const char* password = "01430150960";
+const char* ssid = "";
+const char* password = "";
 
 int readsuccess;
 byte readcard[4];
@@ -74,7 +74,7 @@ void loop() {
     // Datos a enviar
     postData = "UIDresult=" + UIDresultSend;
   
-    http.begin("http://192.168.0.87/NodeMCU_RC522_Mysql/getUID.php");  // Dirección de destino
+      http.begin("http://'DireccionIP'/NodeMCU_RC522_Mysql/getUID.php");  // Dirección de destino
     http.addHeader("Content-Type", "application/x-www-form-urlencoded"); // Cabecera para datos formateados
     
     int httpCode = http.POST(postData);   // Enviar la solicitud POST
