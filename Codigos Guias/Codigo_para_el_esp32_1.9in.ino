@@ -68,7 +68,7 @@ static uint8_t conv2d(const char* p) {
 void setup(void) {
   pinMode(LCD_BLK, OUTPUT);
   digitalWrite(LCD_BLK, HIGH);  // Activar la retroiluminación
-  lcd.init(170, 320);
+  lcd.init(170, 320);  // Tamaño de la patanlla de 1,9''
   lcd.fillScreen(ST77XX_BLACK);
   
   lcd.setTextColor(WHITE, BLACK);
