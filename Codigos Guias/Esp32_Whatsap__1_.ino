@@ -2,9 +2,9 @@
 #include <Callmebot_ESP32.h>
 #include <time.h>
 
-const char* ssid = "paola vilca 2.4Ghz";
-const char* password = "01430150960";
-String phoneNumber = "+5491120441514";
+const char* ssid = "";  //Wifi
+const char* password = ""; // Contraseña del Wifi
+String phoneNumber = ""; //Numero del Celular
 String apiKey = "8454542";
 
 const int buttonPin = 14;  // Pin al que está conectado el botón
