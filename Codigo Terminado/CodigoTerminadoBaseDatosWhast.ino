@@ -6,10 +6,10 @@
 #include <time.h>
 
 // Configuración WiFi y CallMeBot
-const char* ssid = "paola vilca 2.4Ghz";
-const char* password = "01430150960";
-String phoneNumber = "+5491120441514";
-String apiKey = "8454542";
+const char* ssid = ""; //WIFI
+const char* password = ""; // contraseña 
+String phoneNumber = ""; // Telefono
+String apiKey = ""; //Codigo del BOT
 
 // Configuración para obtener la hora
 const char* ntpServer = "pool.ntp.org";
